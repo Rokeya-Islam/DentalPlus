@@ -230,75 +230,267 @@ header{
     color: #707070;
     line-height: 1.6;
 }
-.doctors{
-    background-color: #f9f9f9;
-    text-align: center;
+.doctor{
+
 }
-.doctors h1{
-    font-size: 32px;
-    font-weight: 600;
-    color: #000000;
-    margin-bottom: 15px;
-}
-.doctors img{
-    width: fit-content;
-    margin: 0 auto 10px;
-}
-.doctors p{
-    font-size: 14px;
-    font-weight: 400;
-    color: #707070;
-    margin-bottom: 30px;
-}
-.doctors .item{
-    margin-top: 10px;
-}
-.doctors .item .img_bx{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+.doctor img{
+    
+position: absolute;
+    
+left: 60px;
+    
+width: 40%;
+    
+bottom: 0;
 }
 
-.doctors .item .img_bx .icon_head{
-    display: flex;
-    align-items: center;
+.dr_cntnt_head{
+
+}
+.dr_cntnt_head h2{
+
+font-weight: 700;
+
+font-size: 22px;
+}
+.dr_cntnt_head p{
+
+font-size: 12px;
+}
+
+.doctor_contant{
+
+margin-top: 20px;
+}
+.doctor_contant img{
+    width: 25px;
+}
+.doctor_contant h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+.doctor_contant p{
+    
+font-size: 12px;
+}
+
+
+
+.doctors{
+
+padding: 90px 0;
+
+background: #f9f9f9;
+}
+
+.heading h1{
+    
+font-size: 25px;
+    
+font-weight: 700;
+}
+.heading{
+    
+text-align: center;
+}
+.heading img{
+    
+}
+.heading p{
+    
+font-size: 12px;
+    
+margin-top: 7px;
+    
+margin-bottom: 35px;
+}
+
+.single_doctor{
+
+border-bottom: 2px solid #03a9f4;
+
+transition: .4s all ease-in-out;
+
+margin-bottom: 20px;
+}
+.single_doctor img{
+    
+}
+.doc{
+    position: relative;
+}
+.doc::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 0%;
+    width: 0%;
+    background-color: #000;
+    opacity: .5;
+    transition: .4s all ease-in-out;
+}
+.single_doctor:hover .doc::after{
+    height: 100%;
+    width: 100%;
+}
+.single_doctor h3{
+    
+text-align: center;
+    
+margin-top: 20px;
+}
+.single_doctor p{
+    
+text-align: center;
+    
+margin-top: -5px;
+    
+font-size: 12px;
+}
+
+.single_doctor:hover h3{
+    color: #f69165;
+}
+.single_doctor:hover{
+    border-color: #f69165;
+}
+
+.social_profile{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: 0.3s all ease-in;
-    transition-delay: 0.3s;
 }
-.doctors .item .img_bx:hover .icon_head{
+
+.social_profile ul{
+
+list-style: none;
+
+padding: 0;
+
+margin: 0;
+
+display: flex;
+}
+.social_profile ul li{
+
+width: 30px;
+
+height: 30px;
+
+text-align: center;
+
+line-height: 30px;
+
+border: 1px solid #fff;
+margin: 3px;
+}
+.social_profile ul li a{
+    
+color: #fff;
+
+}
+
+.single_doctor:hover .social_profile{
     opacity: 1;
+    z-index: 2;
 }
 
-.doctors .item .img_bx img{
-    width: 100%;
+.social_profile ul li:hover{
+    background-color: #f69165;
+    border-color: #f69165;
+    transition: .7s all ease-in-out;
 }
-.doctors .item h3{
-    font-size: 20px;
-    font-weight: 500;
-    color: #363636;
-    margin-bottom: 5px;
-    margin-top: 15px;
-    transition: 0.3s all ease-in-out;
-}   
+.our_service{
+    padding: 60px 0 50px;
+}
+.service{
 
-.doctors .item p{
-    font-size: 14px;
-    font-weight: 400;
-    color: #707070;
-    margin-bottom: 35px;
+text-align: center;
+
+padding-bottom: 20px;
 }
-.doctors .item span{
-    width: 100%;
-    height: 4px;
-    display: block;
-    background: #00cce1;
-    margin: 30px auto;
+.service h1{
+
+font-size: 25px;
+
+font-weight: 700;
 }
-.doctors .item:hover span{
-    background: #f59165;
+.service img{
+    
+
 }
+.service p{
+
+font-size: 12px;
+
+margin-top: 10px;
+}
+
+.tooth_serv{
+
+display: flex;
+
+
+
+align-items: center;
+
+margin-bottom: 10px;
+}
+.tooth_serv img{
+
+width: 12%;
+}
+.tooth_serv h3{
+
+font-size: 20px;
+
+margin: 0;
+
+font-weight: 700;
+
+line-height: 23px;
+
+margin-left: 10px;
+}
+
+.tooth{
+
+border: 5px solid #ebebeb;
+
+padding: 40px;
+
+margin-bottom: 25px;
+}
+.tooth p{
+
+font-size: 15px;
+
+margin: 0;
+}
+.tooth h6{
+    
+font-size: 14px;
+    
+margin: 0;
+    
+font-weight: 700;
+    
+margin-top: 6px;
+
+}
+
+.tooth:hover{
+    border-color: #f69165;
+}
+.tooth:hover h6{
+    color: #f69165;
+}
+.tooth:hover .tooth_serv h3{
+    color: #f69165;
+}
+
+
